@@ -1,0 +1,23 @@
+cat > .gitignore <<'EOF'
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfplan
+crash.log
+
+# Credenciais
+*.pem
+*.key
+.aws/
+
+# Editor
+.vscode/
+EOF
